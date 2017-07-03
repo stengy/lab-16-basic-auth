@@ -12,7 +12,7 @@
 # Build Tool Instructions
 * create a package.json that lists all dependencies and developer dependencies
 * include an .eslintrc
-* use a .env file **but do not include it**
+* use a .env and .test.env file **but do not include it**
 * include a .gitignore
  * **add the string `db` to your gitignore**
  * **add the string `node_modules` to your gitignore**
