@@ -15,7 +15,10 @@
 * use a .env file **but do not include it**
 * include a .gitignore
  * **add the string `db` to your gitignore**
+ * **add the string `node_modules` to your gitignore**
  * **add the string `.env` to your gitignore**
+ * **add the string `.test.env` to your gitignore**
+
 * include a readme with a project description and route docs
 
 # Directions
@@ -28,19 +31,13 @@
 * Create a HTTP Server using `express`
 * Use the `http-errors` npm  module with the new`error-response` middleware from lecture
 * Create a **User Model** using mongoose with the properties `username`, `password`, and `findHash`
- * The user must have a unique username and findhash
+ * The user must have a unique username and tokenSeed
  * the user must have an email
  * The user must never store the password as plain text (hash the password)
  * The user must have a method for generating a token from the findHash
 * Create a Basic Auth Middleware for parsing basic auth headers
 * use the `body-parser` express middleware to on `POST` and `PUT` routes
-* use the npm `debug` module to log the functions being executed in your app
 * using the express `Router` create an auth router with routes for **signup** and **signin**
-* Your server should depend on the environment variables
- * `DEBUG` - for turning on logging
- * `APP_SECRET` - for signing and verify tokens
- * `PORT` - for setting the port your server will listen on
- * `MONGODB_URI` - for setting the URI that mongoose will connect to
 
 ## Server Endpoints
 ### `/api/signup`
